@@ -1,0 +1,103 @@
+# 🌾 Comparação AWS: Virgínia do Norte vs São Paulo para API de ML Agrícola
+
+## �� Visão Geral
+
+Este projeto compara os custos e benefícios de hospedar uma API de Machine Learning para agricultura entre as regiões AWS **Virgínia do Norte (us-east-1)** e **São Paulo (sa-east-1)**.
+
+## 🎯 Objetivo
+
+Analisar qual região AWS oferece melhor custo-benefício para uma API que:
+- Recebe dados de sensores agrícolas
+- Processa informações em tempo real
+- Executa modelos de ML para predição de safras
+
+## 💰 Comparação de Custos
+
+### Instância EC2 t3.small (2 vCPUs, 2GB RAM, 50GB storage)
+
+| Região | Custo Mensal | Custo Anual | Diferença |
+|--------|--------------|-------------|-----------|
+| **Virgínia do Norte (us-east-1)** | $21.91 USD | $262.92 USD | Base |
+| **São Paulo (sa-east-1)** | $26.32 USD | $315.84 USD | +20.1% |
+
+**Diferença:** São Paulo custa **$4.41/mês** ou **$52.92/ano** a mais.
+
+## ⚖️ Análise de Trade-offs
+
+### 🇺🇸 Virgínia do Norte (US-EAST-1)
+
+**✅ Vantagens:**
+- 💰 Custo 20% menor
+- 🏢 Região mais madura
+- 📚 Mais serviços AWS disponíveis
+- 🌍 Comunidade global maior
+
+**❌ Desvantagens:**
+- ⏱️ Latência alta (150-200ms) para sensores no Brasil
+- ⚖️ Questões relacionadas à LGPD
+- 🌍 Dados fora do território nacional
+- 🐌 Resposta mais lenta da API
+
+### 🇧🇷 São Paulo (SA-EAST-1)
+
+**✅ Vantagens:**
+- ⚡ Baixa latência (<50ms) para sensores brasileiros
+- ✅ Conformidade com LGPD
+- 🇧🇷 Dados em território nacional
+- 🚀 Resposta rápida da API de ML
+- 🗣️ Suporte em português
+
+**❌ Desvantagens:**
+- 💸 Custo 20% maior
+- 🔧 Menos serviços AWS disponíveis
+- 🆕 Região mais recente
+
+## �� Recomendações
+
+### Para Startups/MVPs:
+**➡️ VIRGÍNIA DO NORTE** - Economia de 20% é crucial na fase inicial
+
+### Para Empresas Estabelecidas:
+**➡️ SÃO PAULO** - Compliance e performance valem o investimento
+
+### Para Aplicações Globais:
+**➡️ VIRGÍNIA DO NORTE** - Melhor custo-benefício internacional
+
+### Para Aplicações Locais (Brasil):
+**➡️ SÃO PAULO** - Latência baixa melhora experiência do usuário
+
+## 🏗️ Arquitetura Híbrida (Dica Extra)
+
+Considere combinar ambas as regiões:
+- **São Paulo:** Cache de dados críticos e API endpoints
+- **Virgínia:** Processamento pesado de ML e storage principal
+- **Resultado:** Baixa latência + economia de custos
+
+## 📊 Principais Insights
+
+1. **💰 Diferença de Custo:** $52.92/ano a mais em São Paulo
+2. **⚡ Latência é Crítica:** Para sensores agrícolas, resposta rápida é essencial
+3. **⚖️ LGPD é Obrigatório:** Dados de produtores brasileiros devem ficar no Brasil
+4. **🎯 Decisão Contextual:** Não existe escolha única - depende dos requisitos
+
+## 🛠️ Especificações Técnicas
+
+- **Instância:** EC2 t3.small
+- **vCPUs:** 2
+- **Memória:** 2 GB
+- **Storage:** 50 GB
+- **Rede:** Até 5 Gigabit
+- **SO:** Linux
+
+## 📈 Conclusão
+
+Para **APIs de ML agrícola com sensores no Brasil**, recomendamos **São Paulo** devido à:
+- Baixa latência para sensores
+- Conformidade com LGPD
+- Melhor experiência do usuário rural
+
+O investimento adicional de 20% se justifica pelos benefícios de performance e compliance.
+
+---
+
+**🚀 Projeto desenvolvido para análise de custos AWS em contexto agrícola**
